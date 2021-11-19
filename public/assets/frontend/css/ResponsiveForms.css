@@ -1,0 +1,1031 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.navbar-static-bottom {
+    margin: 40px auto 0 auto;
+}
+
+fieldset.wSectionTableCSS {
+    margin: 0 0 50px 0;
+}
+
+fieldset {
+    padding: .35em .625em .75em;
+}
+
+.label-up label {
+    display: block;
+}
+
+div.label-up {
+    margin-bottom: 15px;
+}
+
+.selectricWrapper {
+    margin: 0;
+    width: 200px
+}
+
+/* .container {
+    max-width: 730px !important;
+} */
+
+body {
+    padding: 0 !important;
+}
+/* social stuff for the optional sidebar
+.btn-twitter {
+    background: #00acee;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.btn-twitter:link,
+.btn-twitter:visited {
+    color: #fff;
+}
+
+.btn-twitter:active,
+.btn-twitter:hover {
+    background: #0087bd;
+    color: #fff;
+}
+
+.btn-facebook {
+    background: #3b5998;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.btn-facebook:link,
+.btn-facebook:visited {
+    color: #fff;
+}
+
+.btn-facebook:active,
+.btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
+*/
+
+.widget {
+    margin: 0 30px 50px 10px;
+}
+
+.widget-title {
+    font-size: 1.5em;
+    margin: 30px 0 5px 0;
+}
+
+.widget img {
+    margin-bottom: 20px;
+}
+
+form.single-page {
+    padding: 0px 15px;
+}
+
+.btn-group.donation-amount {
+    width: 100%;
+}
+
+.donation-amount label.btn {
+    font-size: 1.5em;
+    margin: 5px 10px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 43px !important;
+    color: #808080;
+    padding: 10px 22px;
+}
+
+i.fa.fa-check.fa-3 {
+    /* display: block;*/
+
+    font-size: 1.5em;
+}
+
+
+.other-amount input[type="text"] {
+    color: #FFF;
+    border: none !Important;
+    width: 110px;
+    background-color: transparent;
+    outline: 0;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-weight:inherit;
+}
+
+label.active input#amount:active,
+label.active input#amount:focus,
+label.active input#amount:hover,
+label.active .otherAmountText:focus,
+label.active .otherAmountText:hover {
+    border: 0 !important;
+    color: #114C7F;
+    background-color: #FFF;
+    border-radius: 2px;
+    outline: none !Important;
+    padding: 1px 5px;   
+}
+
+label.btn.btn-primary.other-amount.active {
+    /* background-color: #E5E5E5 !important;*/
+
+    outline: 0;
+}
+
+.main-right {
+    padding-left: 30px;
+}
+
+label, span.tribute_label, .generic_label {
+    color: #5f5f5f;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.donation-amount label.btn {
+    transition: .3s ease-in-out;
+}
+
+div#tribute-collapse {
+    margin-top: 15px;
+}
+
+.btn-tribute,
+.btn-tribute:hover,
+.btn-tribute:active,
+.btn-tribute:focus {
+    background-color: transparent;
+    border: none;
+    outline: none !Important;
+    font-size: 1.1em;
+    color: #808080;
+    box-shadow: none !important;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.btn-tribute:hover,
+.btn-tribute:focus,
+.btn-tribute:active {
+    color: #30B30E;
+}
+
+div#tribute-collapse {
+    float: right;
+    padding: 20px;
+    background-color: #EBF6E9;
+}
+
+div#tribute-collapse {
+    margin-top: 5px;
+}
+
+.btn-tribute {
+    float: right;
+    clear: both;
+}
+
+.table-confirm {
+    background-color: #fff;
+}
+
+.table-confirm>tbody>tr:first-of-type td {
+    border-top: none;
+}
+
+.zigzag {
+    position: relative;
+    padding: 8px 8px 32px 8px;
+    z-index: 2;
+}
+
+.zigzag:after {
+    background: linear-gradient(-155deg, rgba(255, 255, 255, 0) 17px, #FFF 0), linear-gradient(155deg, rgba(248, 248, 248, 0) 17px, #FFF 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.zigzagshadow {
+    position: relative;
+    padding: 8px 8px 32px 8px;
+    background: #bbb;
+}
+
+.zigzagshadow:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.zigzag-bottom {
+    position: relative;
+    padding: 8px 8px 32px 8px;
+    margin-top: -20px;
+    z-index: 4;
+}
+
+.zigzag-bottom:after {
+    background: linear-gradient(-25deg, rgba(255, 255, 255, 0) 16px, #FFF 0), linear-gradient(25deg, rgba(248, 248, 248, 0) 17px, #FFF 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 41px;
+    z-index: 3;
+}
+
+.tablewrappershadow {
+    box-shadow: 0px -22px 15px rgba(0, 0, 0, 0.07);
+}
+
+.tablewrappershadow2 {
+    box-shadow: 0px 22px 15px rgba(0, 0, 0, 0.07);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.628571;
+    vertical-align: top;
+    border-top: 1px dashed #E1E1E1;
+}
+
+p.thanks {
+    font-size: 1.3em;
+}
+
+.table-confirm i.fa {
+    margin-right: 2px;
+    border-radius: 7px;
+    color: #979797;
+    font-size: 1.1em;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+}
+
+i.fa.fa-circle.fa-3,
+i.fa.fa-check.fa-3 {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.tribute-type>li>a:focus,
+.tribute-type>li>a:hover {
+    background-color: #F5F5F5 !important;
+    background-image: none;
+}
+
+.tribute-type-group {
+    margin-bottom: 10px;
+}
+
+.btn-group.state-group {
+    margin: 20px 0 0 0;
+}
+
+.col-group label {
+    margin: 3px 0;
+    border-radius: 4px !important;
+}
+
+.col-group input[type="checkbox"] {
+    opacity: 0;
+    margin-right: -14px;
+}
+
+.col-group input[type=radio] {
+    opacity: 0;
+    margin-right: -10px;
+}
+
+.amount-group label {
+    font-size: 1.2em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 15px
+}
+/*
+input#first_name {
+    min-width: 276px;
+}
+
+input#last_name {
+    min-width: 276px;
+}
+*/
+
+@media (min-width: 768px) {
+    fieldset.wSectionTableCSS {
+        margin: 20px 22px 50px;
+        display: block;
+    }
+}
+/*@media (min-width: 768px) { input#first_name { min-width: 258px !important; } } @media (min-width: 768px) { input#last_name { min-width: 258px
+!important; } }*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+
+    color: #fff;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+
+    color: #fff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+
+    color: #fff;
+    */ opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+
+    color: #fff;
+}
+
+span.radio-label {
+    margin-right: 18px;
+}
+
+#tribute-collapse .form-group {
+    padding: 5px 10px 5px 15px;
+}
+
+.amount-wrapper {
+    width: 225px;
+    margin: 0 auto;
+}
+
+.amounts-left {
+    float: left;
+    margin-left: 36%;
+    height:23px;
+}
+
+.amounts-left label {
+    color:inherit;
+    font-size:inherit;   
+}
+.glyphicon-asterisk.form-control-feedback {
+    margin: -7px;
+    float: left;
+    position: relative;
+    color: rgb(231, 19, 75);
+    z-index:1;
+}
+
+.form-group .selectricWrapper {
+    width: 157px;
+}
+
+#zip {
+    width: 175px
+}
+
+p.tribute {
+    margin-top: 30px;
+}
+
+.paidstamp {
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    float: right;
+    display: inline-block;
+    z-index: 12;
+    position: relative;
+    right: 50px;
+    top: 110px;
+    margin-top: -52px;
+}
+
+.inlineinput {
+    display: inline-block;
+    min-width: 50px;
+    margin-right: 10px;
+}
+
+.mof-radio, .mof-checkbox {
+    visibility: hidden;
+}
+
+.inlineinput {
+    display: inline-block;
+    min-width: 50px;
+    margin-right: 10px;
+}
+
+label.tribute, span.tribute {
+    margin-top: 20px;
+}
+
+/* this is NOT ok...*/
+/*@media (min-width: 768px) {
+    table>tbody>tr>td:first-of-type {
+        padding-left: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    table>tbody>tr>td:last-of-type {
+        padding-right: 45px;
+    }
+}*/
+
+.paidstamp.hidden-sm {
+    left: auto;
+    top: auto;
+    right: auto;
+    float: left;
+    margin-top: -7px;
+    margin-right: 10px;
+    position: relative;
+    clear: both;
+    display: block;
+}
+
+.table-confirm tr td:first-of-type {
+    color: #808080;
+    font-weight: 600;
+}
+
+.print {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.print .btn {
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.review-items {
+    margin-top: 10px;
+    clear: both;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+tfoot th,
+tfoot td {
+    font-weight: 600;
+}
+
+.review-table>tbody>tr>td:first-of-type {
+    padding-left: 8px;
+}
+
+.review-table {
+    margin: 50px auto;
+    width: 90%;
+}
+/* Phone size plus some wiggle room */
+
+@media (max-width: 500px) {
+    .tablewrap {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    .print .btn {
+        clear: both;
+        display: block;
+    }
+    .print p {
+        clear: both;
+        float: left;
+    }
+    .paidstamp {
+        float: none !important;
+        position: relative !important;
+        margin: 0 auto 20px auto !important;
+    }
+}
+
+.confirm-item-description {
+    float: left;
+    font-weight: 600;
+    font-size: .8em;
+    margin-top: 0.2em;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: block;
+}
+
+.confirm-item-wrapper {
+    margin-bottom: 3px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.confirm-item-amount {
+    float: right;
+    font-size: 0.95em;
+    padding: 2px 6px;
+    display: block;
+}
+
+.confirm-item-count {
+    color: #fff;
+    float: left;
+    border-radius: 14px;
+    padding: 1px 8px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: block;
+}
+
+.confirm-item-total {
+    float: left;
+    font-weight: 600;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+.confirm-item-total-amount {
+    margin-left: 20px;
+    display: inline-block;
+    color: #333333;
+    float: right;
+    font-size: 1.05em;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin-top: -8px;
+}
+
+.confirm-item-total {
+    float: left;
+    font-weight: 600;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.confirm-wrapper {
+    display: inline-block;
+    margin: 45px 15px;
+    clear: both;
+    width: 100% /*TODO:added this to fix UX display*/
+}
+
+.confirm-item-title {
+    font-weight: bold;
+    color: rgba(51, 51, 51, 0.55);
+}
+
+.confirm-item-wrapper:hover {
+    background-color: rgba(51, 51, 51, 0.07);
+    transition: .3s ease-in;
+    font-weight: bolder;
+}
+
+.confirm-item-group {
+    margin-bottom: 15px;
+}
+
+.button-bar {
+    display: inline-block;
+    clear: both;    
+    width: 100%;
+    /*added below to align correctly*/
+    text-align:right;
+    padding-right:10px;
+}
+/***************************************/
+/*
+ * Checkboxes and radios
+ */
+
+.control {
+    position: relative;
+    padding-left: 2.7rem;
+    color: #555;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.control-horizontal {
+    display: inline-block;    
+}
+.control input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* Put the input behind the label so it doesn't overlay text */
+}
+
+.control-indicator {
+    position: absolute;
+    top: -0.15rem;
+    left: 0;
+    display: block;
+    width: 2.3rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    /* font-size: 65%; */
+
+    text-indent: 25px;
+    border: 2px solid #DDD;
+    text-align: center;
+    background-size: 70% 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: .2s;
+}
+/* Checkbox modifiers */
+
+.checkbox .control-indicator {
+    border-radius: 4px;
+}
+
+.checkbox input:checked ~ .control-indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+}
+
+.form-inline .checkbox input[type="checkbox"] {
+    position:absolute;
+}
+
+/* Radio modifiers */
+
+.radio .control-indicator {
+    border-radius: 50%;
+    margin-top: .2em;
+}
+
+.control.radio {
+    padding-bottom:5px; /* adding padding for DCC.  */
+    /*padding-left: 1.2rem; This causes a problem with DCC radiobuttons*/
+}
+
+.radio input:checked ~ .control-indicator {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+}
+/*
+ * Control layouts
+ */
+
+.controls-stacked {
+    margin: 1rem 0;
+}
+
+.controls-stacked .control,
+.controls-stacked .progress {
+    /* display: block; */
+}
+
+.controls-stacked .control + .control,
+.controls-stacked .progress + .progress {
+    margin-top: .5rem;
+}
+
+.controls-inline {
+    margin: 1rem 0;
+}
+
+.controls-inline .control {
+    display: inline-block;
+    height: 1rem;
+}
+
+.controls-inline .control + .control {
+    margin-left: 1rem;
+}
+
+.schedule-desc {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 5px 0px 15px;
+}
+
+.schedule-detail {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 25px 0 -4px 0;
+    color: rgba(51, 51, 51, 0.61);
+    font-weight: 600;
+}
+
+.schedule-days {
+    text-align: center;
+}
+
+.schedule {
+    border-radius: 4px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+input:disabled + label:hover {
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+input:disabled + span.control-indicator:hover {
+    border-color: #ddd !important;
+    cursor: not-allowed;
+}
+
+.control.checkbox:hover input:disabled + .control-indicator {
+    border-color: #ddd !important;
+    cursor: not-allowed;
+}
+
+.control.checkbox:hover input:disabled {
+    cursor: not-allowed !important
+}
+
+.control.checkbox + input:disabled {
+    color: #ccc;
+}
+
+.form-control[disabled] {
+    color: #999;
+}
+
+input:disabled + .control-indicator + .control-text {
+    color: rgba(51, 51, 51, 0.3);
+}
+
+input:checked + .control-indicator + .control-text {
+    color: #555;
+}
+
+.vertical-checks .control {
+    display: block;
+    margin: 10px 0;
+}
+
+.button-bar .btn {
+    margin: 5px;
+}
+.promocodeSuccessError {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+/*jQuery-ui and bootstrap conflict resolution*/
+.ui-datepicker-title {
+    color:#000;
+    font-weight:normal;
+}
+
+/*fix test banner */
+.jquery-notify-bar {
+    position:unset;
+}
+
+/*sharing section*/
+#ResponsiveShareSection {
+    text-align:center;
+}
+#ResponsiveShareSection a i {
+    color: #408AB3;
+    text-decoration: none;
+    font-size: 30px;
+}
+#ResponsiveShareSection a i:hover {
+    color: #81bfe6;
+}
+.spnShareMethod {
+    font-size: .9em;
+    padding-right: 10px;
+}
+.ResponsiveShareLinks {
+    padding: 0px 2px;
+    height: inherit;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    top: 5px;
+    position: relative;
+}
+/* Timeout page */
+.timeout-text-layout {    
+    text-align: left;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+/* discount codes */
+.discount-code {
+    margin: 15px 0;
+}
+.promocode-left-space {
+    padding-left:16px;
+}
+/* end discount codes */
+/* class for displaying readonly fields like disabled*/
+.read-only-version {
+    color:#999999;
+    cursor: no-drop;
+}
+.read-only-version:focus {
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+/* extra classes - unconverted controls mostly (remove once converted)*/
+.label-for-radio {
+    padding-right:5px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: .35em 1.2em .75em;
+}
+
+fieldset {
+    padding: 0;
+}
+
+.dccText{
+   padding: .35em 1.2em .75em;
+   
+}
+
+.amounts-left {
+    float: left;
+    margin-left: 36%;
+    height: 26px;
+}
+
+.form-group .checkbox{
+    display:inline-block;
+}
+
+
+.item-section-checkbox {
+    margin-top: 4px;
+}
+.padding-top-15 {
+    padding-top:15px;
+}
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+.no-checkbox-pad-left {
+    padding-left:25px;
+}
+
+/*ucPersons adjustments*/
+table.ucPersons {
+    width:100%;
+    margin:20px 0px;
+    border:none !important;
+
+}
+
+table.ucPersons th {
+    font-weight: 600;
+    font-size: .8em;
+    margin-top: 0.2em;
+    text-transform: uppercase;   
+}
+
+table.ucPersons tr td{
+    padding:  0px ;
+}
+
+table.ucPersons tr td tr:hover{
+    background-color: rgba(51, 51, 51, 0.07);
+    transition: .3s ease-in;    
+}
+
+table.ucPersons tr td, table.ucPersons tr, table.ucPersons th, #cPersons_gvPersons {
+    border:none !important;
+}
+
+.AttendeeEventHeader {
+    font-style: italic;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 4px !important;
+    text-shadow: #fff 1px 1px;
+}
+.form-control-inline {
+    min-width: 100px;
+    width: auto;
+    display: inline;
+}
+select.placeholder {
+    color: #999999;
+}
+select.watermark option:first-child {
+    color: #999999;
+}
+select.watermark option {
+    color: #555;
+}
+/* different size popover for larger amount of text */
+.medium-popover .popover {
+    max-width: 450px;
+    width:auto;
+}
+.wl-popover-click {
+    cursor: pointer;
+}
+
+.bold-text {
+    font-weight:bold;
+}
+
+/*long button text fix*/
+.wrapping-text {
+    float: right;
+    max-width: 480px;
+    position: relative;
+    top: -3px;
+}
+
+.long-text {
+    height: auto;
+    margin-left: 0;
+    white-space: normal;
+    text-align: left;
+}
+
+.remove-set-width {
+    width: 100%;
+}
+
+.other-amount-long-text {
+    max-width: 480px !important;
+    width: auto !important;
+}
+
+.amount-radio-option {
+    font-weight:normal;
+}
+
+/* needed for display < 480px */
+.otherAmountText {
+    text-overflow:ellipsis;
+}
+/*end long button text fix*/
+
+/*default footer classes*/
+.default-footer-text {
+	margin-top: 10px;
+}
+/* end default footer classes*/
+
+.pnlShare {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.fldProcessComplete {
+	margin: 0 22px 0;
+	display: block;
+}
