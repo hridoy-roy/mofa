@@ -46,5 +46,8 @@ class WebController extends Controller
     public function joinForm(){
         return view('frontend.join_form');
     }
+    public function profile(){
+        return view('frontend.profile');
+    }
 
 }

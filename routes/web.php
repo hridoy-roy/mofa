@@ -29,6 +29,7 @@ Route::group(['namespace'=>'frontend'], function(){
     Route::get('/student', [WebController::class, 'student'])->name('student');
     Route::get('/individual', [WebController::class, 'individual'])->name('individual');
     Route::get('/join-form', [WebController::class, 'joinForm'])->name('join.form');
+    Route::get('/profile', [WebController::class, 'profile'])->name('profile');
 });
 
  Route::group(['namespace'=>'backend'], function(){

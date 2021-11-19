@@ -1,7 +1,7 @@
 @extends('layouts.frontend.app')
 @push('styles')
     <link href="{{ asset('assets/frontend/css/ResponsiveForms.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/inline.css') }}" rel="stylesheet">
     <style>
         body{
