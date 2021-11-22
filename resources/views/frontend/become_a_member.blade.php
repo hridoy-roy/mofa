@@ -8,44 +8,35 @@
     <div id="content" class="site-content" style="margin-top: 131.567px;">
         <div class="textured-bg">
             <div class="container members__page">
-                <h1 class="members__title">Become a Member</h1>
+                <h1 class="members__title">Member</h1>
                 <section class="members__membership-type">
                     <div class="members__membership-type-wrapper">
-                        <article data-membership="Individual">
+                        <article data-membership="Individual" style="display: flex;align-self: self-start;">
                             <div>
-                                <span class="members__membership-price">
-                                    <small>$</small>50<small>/year</small>
-                                </span>
-                                <h2>Individual</h2>
-                                <p>Treat yourself to a MOPA membership, and visit as often as you'd like.</p>
-                                <a href="#" class="members__membership-modal-trigger">View all membership benefits</a>
+                                <h2>Already a Member?</h2>
+                                {{-- <p>Treat yourself to a MOPA membership, and visit as often as you'd like.</p> --}}
+                                {{-- <a href="#" class="members__membership-modal-trigger">View all membership benefits</a> --}}
                                 <div class="members__membership-buttons">
-                                    <a class="mopa-btn mopa-btn--gradient" href="#" target="_blank">JOIN NOW</a>
-                                    <a class="mopa-btn mopa-btn--hollow" href="#">HOUSEHOLD (DUAL) - $ 75</a>
+                                    <a class="mopa-btn mopa-btn--gradient" href="#" target="_blank">LOG IN</a>
+                                    {{-- <a class="mopa-btn mopa-btn--hollow" href="#">HOUSEHOLD (DUAL) - $ 75</a> --}}
                                 </div>
                             </div>
-                            <picture>
-                                <img alt="" src="https://mopa.org/wp-content/uploads/2021/09/sandy-ching-k7b6pvNqAuM-unsplash-1.jpg">
-                            </picture>
                         </article>
-                        <article data-membership="Senior">
+                        <article data-membership="Senior" style="display: flex;align-self: self-start;">
                             <div>
-                                <span class="members__membership-price">
+                                {{-- <span class="members__membership-price">
                                     <small>$</small>40<small>/year</small>
-                                </span>
-                                <h2>Senior</h2>
-                                <p>Enjoy all MOPA has to offer -- with your own annual membership.</p>
-                                <a href="#" class="members__membership-modal-trigger">View all membership benefits</a>
+                                </span> --}}
+                                <h2>Become a Member</h2>
+                                {{-- <p>Enjoy all MOPA has to offer -- with your own annual membership.</p> --}}
+                                {{-- <a href="#" class="members__membership-modal-trigger">View all membership benefits</a> --}}
                                 <div class="members__membership-buttons">
                                     <a class="mopa-btn mopa-btn--gradient" href="#" target="_blank" >JOIN NOW</a>
-                                    <a class="mopa-btn mopa-btn--hollow" href="#" target="_blank">SENIOR (DUAL) - $ 70</a>
+                                    {{-- <a class="mopa-btn mopa-btn--hollow" href="#" target="_blank">SENIOR (DUAL) - $ 70</a> --}}
                                 </div>
                             </div>
-                            <picture>
-                                <img alt="" src="https://mopa.org/wp-content/uploads/2021/09/adrien-olichon-AcLG4W3dXUA-unsplash-1.jpg">
-                            </picture>
                         </article>
-                        <article data-membership="Photographer's Circle">
+                        {{-- <article data-membership="Photographer's Circle">
                             <div><span class="members__membership-price"><small>$</small>150<small>/year</small></span>
                                 <h2>Photographer's Circle</h2>
                                 <p>Unlock access to museums across the country and beyond.</p><a href="#"
@@ -57,8 +48,8 @@
                             </div>
                             <picture><img alt="" src="https://mopa.org/wp-content/uploads/2021/09/image-11.jpg">
                             </picture>
-                        </article>
-                        <article data-membership="Silver Circle">
+                        </article> --}}
+                        {{-- <article data-membership="Silver Circle">
                             <div><span class="members__membership-price">
                                 <small>$</small>250<small>/year</small>
                             </span>
@@ -72,10 +63,10 @@
                             <picture>
                                 <img alt="" src="https://mopa.org/wp-content/uploads/2021/09/mopa-hero-3-1.jpg">
                             </picture>
-                        </article>
+                        </article> --}}
                     </div>
                     <div class="members__text-after-membership">
-                        <p>Already a Member? <a href="#" target="_blank" rel="noopener">Renew Membership</a></p>
+                        {{-- <p>Already a Member? <a href="#" target="_blank" rel="noopener">Renew Membership</a></p> --}}
                         <style>
                             article[data-membership="Photographer's Circle"],
                             article[data-membership="Silver Circle"] {
@@ -84,7 +75,7 @@
                         </style>
                     </div>
                 </section>
-                <section class="members__second-block">
+                {{-- <section class="members__second-block">
                     <h2>Additional Membership Options</h2>
                     <div class="members__second-block-description">
                         <p>Membership durations are for 1 Year (Annual)</p>
@@ -100,7 +91,7 @@
                             tax-deductible. (All non-tax-deductible benefits may be waived to receive full deduction if
                             noted.)</p>
                     </div>
-                </section>
+                </section> --}}
                 <section class="members__third-block">
                     <h2>“Beautiful photography museum! Their exhibitions are some of the best exhibitions I have ever
                         seen.”</h2>

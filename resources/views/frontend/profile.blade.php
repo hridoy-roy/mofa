@@ -1,7 +1,7 @@
 @extends('layouts.frontend.app')
 @push('styles')
     <link href="{{ asset('assets/frontend/css/ResponsiveForms.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/frontend/css/bootstrap.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('assets/frontend/css/bootstrap.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('assets/frontend/css/inline.css') }}" rel="stylesheet">
     <style>
         body{
@@ -61,19 +61,31 @@
         }
         
         input {
-        color: #000 !important;
-        border-radius: 0 !important;
-        border: 1px solid #000 !important;
-        width: 100% !important;
-        height: 50px !important;
-        font-size: 16px !important;
-        text-align: left !important;
-        padding: 10px !important;
-    }
-             .btn-submit::before {
+            color: #000 !important;
+            border-radius: 0 !important;
+            border: 1px solid #000 !important;
+            width: 100% !important;
+            height: 50px !important;
+            font-size: 16px !important;
+            text-align: left !important;
+            padding: 10px !important;
+        }
+        .btn-submit::before {
             content: "Submit";
             font-size: 14px;
             letter-spacing: 2px;
+        }
+        @media only screen and (max-width: 490px) {
+            [data-label="First Name"] {
+            width: 100%;
+            /* margin-right: 2.5%; */
+            display: inline-block;
+            }
+            [data-label="Last Name"] {
+            width: 100%;
+            /* margin-right: 2.5%; */
+            display: inline-block;
+            }
         }
     </style>
 @endpush
@@ -114,10 +126,10 @@
                                     <input name="mobile" type="text" maxlength="20" class="form-control" placeholder="Mobile ">
                             </div>
                         </div>
-                    </fieldset>
-                    <div id="div1" class="button-bar">
+                        <div id="div1" class="button-bar">
                             <button class="btn btn-default btn-next" type="submit"></button>
-                    </div>
+                        </div>
+                    </fieldset>
                 </form>
                 <form method="post" action="">
                     <fieldset id="security" level="Section1" class="wSectionTableCSS">
@@ -132,10 +144,10 @@
                                     <input name="first_name" type="password" maxlength="10" id="" class="form-control" placeholder="Confirm Password ">
                             </div>
                         </div>
+                        <div id="div1" class="button-bar">
+                            <button class="btn btn-default btn-next" type="submit"></button>
+                        </div>
                     </fieldset>
-                    <div id="div1" class="button-bar">
-                            <button class="btn btn-default btn-submit" type="submit"></button>
-                    </div>
                 </form>
                 </div>
             </div>

@@ -10,6 +10,53 @@
         .form-group{
             margin-left: 0px !important;
         }
+        .btn-submit::before {
+            content: "Submit";
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+        .btn-submit{
+            width: 100% !important;
+            font-size: 0 !important;
+            text-align: center !important;
+            background-color: #FD8B04 !important;
+            background: linear-gradient(270deg, #FD8B04 0%, #FB3D97 100%) !important;
+            border-radius: 0 !important;
+            border: 0 !important;
+            padding: 14px 7px !important;
+            font-weight: 700 !important;
+            margin-top: 20px !important !important;
+        }
+        input[type="password"], select {
+            color: #000 !important;
+            border-radius: 0 !important;
+            border: 1px solid #000 !important;
+            width: 100% !important;
+            height: 50px !important;
+            font-size: 16px !important;
+            text-align: left !important;
+            padding: 10px !important;
+        }
+        .redio-input label{
+            color: #000 !important;
+            font-size: 16px !important;
+            padding: 10px !important;
+        }
+        .redio-input > label{
+            font-size: 20px !important;
+            padding-left: 0px;
+            font-family: "maax",sans-serif;
+        }
+        .redio-input > div > div{
+            display: flex;
+            display: inline-flex;
+
+        }
+        input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+            outline: none !important;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
     </style>
 @endpush
 @push('scripts')
@@ -32,176 +79,79 @@
                         <div class="form-inline label-up" data-label="First Name">
                             <div level="Field_first_name" class="form-group" data-placeholder="true">
                                 <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>First Name</label>
+                                <label>First Name *</label>
                                 <div id="first_name_pnl">
-                                    <input name="first_name:ucTxtBox" type="text" maxlength="30"
-                                        id="first_name_ucTxtBox" onblur="SetCCName();" class="form-control"
-                                        placeholder="First Name *">
+                                    <input name="first_name" type="text" maxlength="30" id="first_name_ucTxtBox" class="form-control" placeholder="First Name *">
                                 </div>
                             </div>
                         </div>
                         <div class="form-inline label-up" data-label="Last Name">
                             <div level="Field_last_name" class="form-group" data-placeholder="true">
                                 <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>Last Name</label>
+                                <label>Last Name *</label>
                                 <div id="last_name_pnl">
-                                    <input name="last_name:ucTxtBox" type="text" maxlength="30" id="last_name_ucTxtBox"
-                                        onblur="SetCCName();" class="form-control" placeholder="Last Name *">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-inline label-up" data-label="Address">
-                            <div level="Field_address" class="form-group" data-placeholder="true">
-                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>Address</label>
-                                <div id="address_pnl">
-                                    <input name="address:ucTxtBox" type="text" maxlength="30" id="address_ucTxtBox"
-                                        class="form-control" placeholder="Address *">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-inline label-up" data-label="City">
-                            <div level="Field_city" class="form-group" data-placeholder="true">
-                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>City</label>
-                                <div id="city_pnl">
-                                    <input name="city:ucTxtBox" type="text" maxlength="30" id="city_ucTxtBox"
-                                        class="form-control" placeholder="City *">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-inline label-up" data-label="State">
-                            <div level="Field_state" class="form-group" data-placeholder="true">
-                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>State</label>
-                                <div id="state_pnl">
-                                    <select name="state:ucDDL" id="state_ucDDL" class="form-control">
-                                        <option selected="selected" value="">State *</option>
-                                        <option value="AL|Alabama|Y">Alabama</option>
-                                        <option value="AK|Alaska|Y">Alaska</option>
-                                        <option value="AB|Alberta|Y">Alberta</option>
-                                        <option value="AZ|Arizona|Y">Arizona</option>
-                                        <option value="AR|Arkansas|Y">Arkansas</option>
-                                        <option value="AA|Armed Forces Americas|Y">Armed Forces Americas</option>
-                                        <option value="AE|Armed Forces Other|Y">Armed Forces Other</option>
-                                        <option value="AP|Armed Forces Pacific|Y">Armed Forces Pacific</option>
-                                        <option value="BC|British Columbia|Y">British Columbia</option>
-                                        <option value="CA|California|Y">California</option>
-                                        <option value="CO|Colorado|Y">Colorado</option>
-                                        <option value="CT|Connecticut|Y">Connecticut</option>
-                                        <option value="DE|Delaware|Y">Delaware</option>
-                                        <option value="FL|Florida|Y">Florida</option>
-                                        <option value="GA|Georgia|Y">Georgia</option>
-                                        <option value="HI|Hawaii|Y">Hawaii</option>
-                                        <option value="ID|Idaho|Y">Idaho</option>
-                                        <option value="IL|Illinois|Y">Illinois</option>
-                                        <option value="IN|Indiana|Y">Indiana</option>
-                                        <option value="IA|Iowa|Y">Iowa</option>
-                                        <option value="KS|Kansas|Y">Kansas</option>
-                                        <option value="KY|Kentucky|Y">Kentucky</option>
-                                        <option value="LA|Louisiana|Y">Louisiana</option>
-                                        <option value="ME|Maine|Y">Maine</option>
-                                        <option value="MB|Manitoba|Y">Manitoba</option>
-                                        <option value="MD|Maryland|Y">Maryland</option>
-                                        <option value="MA|Massachusetts|Y">Massachusetts</option>
-                                        <option value="MI|Michigan|Y">Michigan</option>
-                                        <option value="MN|Minnesota|Y">Minnesota</option>
-                                        <option value="MS|Mississippi|Y">Mississippi</option>
-                                        <option value="MO|Missouri|Y">Missouri</option>
-                                        <option value="MT|Montana|Y">Montana</option>
-                                        <option value="NE|Nebraska|Y">Nebraska</option>
-                                        <option value="NV|Nevada|Y">Nevada</option>
-                                        <option value="NB|New Brunswick|Y">New Brunswick</option>
-                                        <option value="NH|New Hampshire|Y">New Hampshire</option>
-                                        <option value="NJ|New Jersey|Y">New Jersey</option>
-                                        <option value="NM|New Mexico|Y">New Mexico</option>
-                                        <option value="NY|New York|Y">New York</option>
-                                        <option value="NL|Newfoundland and Labrador|Y">Newfoundland and Labrador</option>
-                                        <option value="NC|North Carolina|Y">North Carolina</option>
-                                        <option value="ND|North Dakota|Y">North Dakota</option>
-                                        <option value="NT|Northwest Territories|Y">Northwest Territories</option>
-                                        <option value="NS|Nova Scotia|Y">Nova Scotia</option>
-                                        <option value="NU|Nunavut|Y">Nunavut</option>
-                                        <option value="OH|Ohio|Y">Ohio</option>
-                                        <option value="OK|Oklahoma|Y">Oklahoma</option>
-                                        <option value="ON|Ontario|Y">Ontario</option>
-                                        <option value="OR|Oregon|Y">Oregon</option>
-                                        <option value="PA|Pennsylvania|Y">Pennsylvania</option>
-                                        <option value="PE|Prince Edward Island|Y">Prince Edward Island</option>
-                                        <option value="PR|Puerto Rico|Y">Puerto Rico</option>
-                                        <option value="QC|Quebec|Y">Quebec</option>
-                                        <option value="RI|Rhode Island|Y">Rhode Island</option>
-                                        <option value="SK|Saskatchewan|Y">Saskatchewan</option>
-                                        <option value="SC|South Carolina|Y">South Carolina</option>
-                                        <option value="SD|South Dakota|Y">South Dakota</option>
-                                        <option value="TN|Tennessee|Y">Tennessee</option>
-                                        <option value="TX|Texas|Y">Texas</option>
-                                        <option value="UT|Utah|Y">Utah</option>
-                                        <option value="VT|Vermont|Y">Vermont</option>
-                                        <option value="VA|Virginia|Y">Virginia</option>
-                                        <option value="WA|Washington|Y">Washington</option>
-                                        <option value="DC|Washington DC|Y">Washington DC</option>
-                                        <option value="WV|West Virginia|Y">West Virginia</option>
-                                        <option value="WI|Wisconsin|Y">Wisconsin</option>
-                                        <option value="WY|Wyoming|Y">Wyoming</option>
-                                        <option value="YT|Yukon|Y">Yukon</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-inline label-up" data-label="Zip" style="margin-left: 0px;">
-                            <div level="Field_zip" class="form-group" data-placeholder="true">
-                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div><label>Zip</label>
-                                <div id="zip_pnl">
-                                    <input name="zip:ucTxtBox" type="text" maxlength="10" id="zip_ucTxtBox"
-                                        class="form-control" placeholder="Zip *">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-inline label-up" data-label="Phone (optional)">
-                            <div level="Field_home_phone" class="form-group" data-placeholder="true"><label>Phone
-                                    (optional)</label>
-                                <div id="home_phone_pnlPhone">
-                                    <input name="home_phone:ucPhone" type="text" maxlength="15" id="home_phone_ucPhone"
-                                        class="ucPhone form-control" placeholder="Phone (optional)">
+                                    <input name="last_name" type="text" maxlength="30" id="last_name_ucTxtBox" class="form-control" placeholder="Last Name *">
                                 </div>
                             </div>
                         </div>
                         <div class="form-inline label-up" data-label="Email">
                             <div level="Field_email" class="form-group" data-placeholder="true">
                                 <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
-                                <label>Email</label>
-                                <meta name="vs_snapToGrid" content="False">
-                                <meta name="vs_showGrid" content="True">
+                                <label>Email *</label>
                                 <div id="email_pnlucEmailReq">
-                                    <span controltovalidate="email_ucEmail"
-                                        errormessage="Your entry is not a valid email address!" display="Dynamic"
-                                        id="email_valEmail"
-                                        evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
-                                        validationexpression="^\s*[\w-\.]+@([\w-]+\.)+[\w-]{2,}\s*$"
-                                        style="color:Red;font-size:XX-Small;font-weight:bold;display:none;">Your entry
-                                        is not a valid email address!</span>
-                                    <input name="email:ucEmail" type="text" maxlength="50" id="email_ucEmail"
-                                        class="form-control" placeholder="Email *">
+                                    <input name="email" type="text" maxlength="50" id="email_ucEmail" class="form-control" placeholder="Email *">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-inline label-up" data-label="Second Member First Name" style="display: none;">
-                            <div level="Field_spouse_first" class="form-group" data-placeholder="true"><label>Second
-                                    Member First Name</label><input name="spouse_first" type="text" maxlength="15"
-                                    id="spouse_first" class="form-control" fieldprompt="Second Member First Name"
-                                    placeholder="Second Member First Name"></div>
+                        <div class="form-inline label-up" data-label="Phone (optional)">
+                            <div level="Field_home_phone" class="form-group" data-placeholder="true"><label>Phone </label>
+                                <div id="home_phone_pnlPhone">
+                                    <input name="home_phone:ucPhone" type="text" maxlength="15" id="home_phone_ucPhone"
+                                        class="ucPhone form-control" placeholder="Phone ">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-inline label-up" data-label="Second Member Last Name" style="display: none;">
-                            <div level="Field_spouse_last" class="form-group" data-placeholder="true"><label>Second
-                                    Member Last Name</label><input name="spouse_last" type="text" maxlength="200"
-                                    id="spouse_last" class="form-control" fieldprompt="Second Member Last Name"
-                                    placeholder="Second Member Last Name"></div>
+                        <div class="form-inline label-up" data-label="">
+                            <div level="" class="form-group redio-input" data-placeholder="false">
+                                <label>Gender </label>
+                                <div id="home_phone_pnlPhone" style="display: flex;justify-content: space-between;">
+                                    <div>
+                                        <input name="gender" type="radio" value="m" maxlength="15" class="form-control" placeholder="Phone ">
+                                        <label>Male </label>
+                                    </div>
+                                    <div>
+                                        <input name="gender" type="radio" value="f" maxlength="15" class="form-control" placeholder="Phone ">
+                                        <label>Female </label>
+                                    </div>
+                                    <div>
+                                        <input name="gender" type="radio" value="o" maxlength="15" class="form-control" placeholder="Phone ">
+                                        <label>Other </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-inline label-up" data-label="">
+                            <div level="" class="form-group" data-placeholder="true">
+                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
+                                <label>Password </label>
+                                <div>
+                                    <input name="password" type="password" maxlength="30" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-inline label-up" data-label="">
+                            <div level="" class="form-group" data-placeholder="true">
+                                <div class="glyphicon glyphicon-asterisk form-control-feedback"></div>
+                                <label>Confirm Password </label>
+                                <div>
+                                    <input name="confirm_password" type="password" maxlength="30" class="form-control" placeholder="Confirm Password">
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
-                    <div id="div1" class="button-bar"><a id="btnConfirm12345" class="btn btn-default btn-next"
-                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnConfirm12345&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Next
-                            <i class="fa fa-arrow-right"></i></a></div>
+                    <div id="div1" class="button-bar">
+                        <button type="submit" value="submit" class="btn btn-default btn-submit"></button>
+                    </div>
                 </div>
             </div>
             <div id="pnlLinks"><a class="mopa-return-link" href="https://mopa.org/memberships" target="_top">Return to

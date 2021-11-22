@@ -30,8 +30,18 @@ Route::group(['namespace'=>'frontend'], function(){
     Route::get('/individual', [WebController::class, 'individual'])->name('individual');
     Route::get('/join-form', [WebController::class, 'joinForm'])->name('join.form');
     Route::get('/profile', [WebController::class, 'profile'])->name('profile');
+    Route::get('/log-in', [WebController::class, 'logIn'])->name('log.in');
+    Route::get('/contact', [WebController::class, 'contact'])->name('contact');
 });
 
  Route::group(['namespace'=>'backend'], function(){
      Route::get('/admin',[AdminWebController::class, 'index']);
  });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

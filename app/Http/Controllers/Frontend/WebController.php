@@ -49,5 +49,11 @@ class WebController extends Controller
     public function profile(){
         return view('frontend.profile');
     }
+    public function logIn(){
+        return view('frontend.login');
+    }
+    public function contact(){
+        return view('frontend.contact');
+    }
 
 }
